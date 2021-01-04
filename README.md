@@ -1,1 +1,1 @@
-# semanaDevSuperior_2
+# Projeto referente a segunda edição da Semana DevSuperior
