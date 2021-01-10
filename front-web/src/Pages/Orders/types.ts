@@ -16,3 +16,9 @@ export type Order = {
     total: number,
     products: Product[],
 }
+
+export type OrderLocationData = {
+    latitude: number;
+    longitude: number;
+    address: string;
+}
