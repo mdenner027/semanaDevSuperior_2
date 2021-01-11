@@ -1,7 +1,7 @@
 import axios from "axios";
 import { OrderPayload } from "./Pages/Orders/types";
 
-const API_URL = 'http://localhost:8080';
+//const API_URL = 'http://localhost:8080';
 const API_URL_PROD = 'https://sds2-max.herokuapp.com';
 const mapboxToken = process.env.REACT_APP_ACCESS_TOKEN_MAP_BOX;
 
