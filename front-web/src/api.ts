@@ -2,10 +2,11 @@ import axios from "axios";
 import { OrderPayload } from "./Pages/Orders/types";
 
 const API_URL = 'http://localhost:8080';
+const API_URL_PROD = 'https://sds2-max.herokuapp.com';
 const mapboxToken = process.env.REACT_APP_ACCESS_TOKEN_MAP_BOX;
 
 export function fetchProducts() {
-    return axios(`${API_URL}/products`);
+    return axios(`${API_URL_PROD}/products`);
 }
 
 export function fetchLocalMapBox(local: string) {
@@ -13,5 +14,5 @@ export function fetchLocalMapBox(local: string) {
 }
 
 export function saveOrder(payload: OrderPayload) {
-    return axios.post(`${API_URL}/orders`, payload);
+    return axios.post(`${API_URL_PROD}/orders`, payload);
 }
